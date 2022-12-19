@@ -7,10 +7,10 @@ from core import checks
 from core.models import PermissionLevel
 
 class ModmailView(commands.Cog): 
-    """Commands to give members access to text channels."""
-    
-    def __init__(self, bot):
-        self.bot = bot
+	"""Commands to give members access to text channels."""
+	
+	def __init__(self, bot):
+		self.bot = bot
 
 	@commands.command()
 	@checks.has_permissions(PermissionLevel.ADMIN)
@@ -82,4 +82,4 @@ class ModmailView(commands.Cog):
 					))
 			
 def setup(bot):
-    bot.add_cog(ModmailView(bot))
+	bot.add_cog(ModmailView(bot))
